@@ -301,3 +301,185 @@ footer{
 .details-btn:hover{
     background:#ebe6ea;
 }
+
+/* Product Popup */
+
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.6);
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:1000;
+}
+
+.modal-content{
+
+    background:white;
+
+    width:90%;
+    max-width:500px;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    position:relative;
+
+    animation:popup 0.3s ease;
+}
+
+.modal-content img{
+
+    width:250px;
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+}
+
+.close-btn{
+
+    position:absolute;
+
+    top:15px;
+    right:20px;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    color:red;
+}
+
+@keyframes popup{
+
+    from{
+        transform:scale(0.8);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+.cart-btn{
+    width:90%;
+    padding:12px;
+    margin:10px;
+    border:none;
+    border-radius:8px;
+    background:black;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cart-btn:hover{
+    background:gray;
+}
+#cartIcon{
+    background:white;
+    color:black;
+    padding:10px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-left:20px;
+}
+
+#cartIcon:hover{
+    background:black;
+}
+
+/* Shopping Cart */
+
+.cart-panel{
+
+    position:fixed;
+
+    top:0;
+    right:-350px;
+
+    width:320px;
+    height:100%;
+
+    background:white;
+
+    box-shadow:-5px 0 15px rgba(0,0,0,.2);
+
+    padding:20px;
+
+    transition:.4s;
+
+    z-index:2000;
+
+    overflow-y:auto;
+
+}
+
+.cart-panel.active{
+
+    right:0;
+
+}
+
+.cart-panel h2{
+
+    margin-bottom:20px;
+
+    color:#8B4513;
+
+}
+
+#cartItems{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+#cartItems li{
+
+    padding:10px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+#closeCart{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:12px;
+
+    background:#8B4513;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}

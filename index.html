@@ -18,6 +18,8 @@
 <a href="#products">Products</a>
 <a href="#contact">Contact</a>
 <a href="#location">Location</a>
+<a href="#" id="cartIcon">
+    🛒 Cart (<span id="cartCount">0</span>)</a>
 </nav>
 
 </header>
@@ -104,7 +106,13 @@
 
 <div class="products">
 
-<div class="card" data-name="almonds">
+<div class="card"
+     data-name="almonds"
+     data-title="Almonds"
+     data-image="images/almonds.jpg"
+     data-price="850"
+     data-description="Fresh Premium Almonds rich in protein and healthy fats.">
+    
 
     <img src="images/almonds.jpg" alt="Almonds">
 
@@ -113,23 +121,35 @@
     <p>Fresh Premium Almonds</p>
 
     <button class="details-btn">
-    View Details
+View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I%20want%20to%20order%20Almonds"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+🛒 Add to Cart
+</button>
+
+<a class="order-btn"
+href="https://wa.me/919876543210?text=I want to order Almonds"
+target="_blank">
+Order on WhatsApp
+</a>
+
 </div>
 
-<div class="card" data-name="cashews">
+<div class="card"
+     data-name="cashews"
+     data-title="Cashews"
+     data-image="images/cashew.jpg"
+     data-description="Premium Quality Cashew Nuts. Rich in protein, healthy fats, and essential minerals.">
 
     <img src="images/cashew.jpg" alt="Cashews">
 
     <h3>Cashews</h3>
 
     <p>Premium Quality Cashew Nuts</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Cashews"
@@ -138,13 +158,20 @@
     </a>
 </div>
 
-<div class="card" data-name="pistachios">
+<div class="card"
+     data-name="pistachios"
+     data-title="Pistachios"
+     data-image="images/pistachio.jpg"
+     data-description="Premium Pistachios packed with fiber, protein, and antioxidants.">
 
     <img src="images/pistachio.jpg" alt="Pistachios">
 
     <h3>Pistachios</h3>
 
     <p>Premium Quality Pistachios</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Pistachios"
@@ -153,13 +180,20 @@
     </a>
 </div>
 
-<div class="card" data-name="raisins">
+<div class="card"
+     data-name="raisins"
+     data-title="Raisins"
+     data-image="images/raisins.jpg"
+     data-description="Naturally sweet raisins rich in iron, calcium, and antioxidants.">
 
     <img src="images/raisins.jpg" alt="Raisins">
 
     <h3>Raisins</h3>
 
     <p>Fresh Premium Raisins</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Raisins"
@@ -168,13 +202,20 @@
     </a>
 </div>
 
-<div class="card" data-name="black raisins">
+<div class="card"
+     data-name="black raisins"
+     data-title="Black Raisins"
+     data-image="images/black raisins.jpg"
+     data-description="Premium Black Raisins rich in iron, vitamins, and natural sweetness.">
 
     <img src="images/black raisins.jpg" alt="Black Raisins">
 
     <h3>Black Raisins</h3>
 
     <p>Premium Black Raisins</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Black Raisins"
@@ -183,13 +224,19 @@
     </a>
 </div>
 
-<div class="card" data-name="figs">
-
+<div class="card"
+     data-name="figs"
+     data-title="Figs"
+     data-image="images/fig.jpg"
+     data-description="Premium dried figs packed with fiber, calcium, and antioxidants.">
     <img src="images/fig.jpg" alt="Figs">
 
     <h3>Figs</h3>
 
     <p>Premium Dried Figs</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Figs"
@@ -198,13 +245,20 @@
     </a>
 </div>
 
-<div class="card" data-name="walnuts">
+<div class="card"
+     data-name="walnuts"
+     data-title="Walnuts"
+     data-image="images/walnut.jpg"
+     data-description="Premium walnuts rich in Omega-3 fatty acids and antioxidants.">
 
     <img src="images/walnut.jpg" alt="Walnuts">
 
     <h3>Walnuts</h3>
 
     <p>Premium Quality Walnuts</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Walnuts"
@@ -221,13 +275,20 @@
 
 <div class="products">
 
-<div class="card" data-name="rock sugar">
+<div class="card"
+     data-name="rock sugar"
+     data-title="Rock Sugar"
+     data-image="images/rock sugar.jpg"
+     data-description="Pure natural rock sugar with a clean, sweet taste. Perfect for traditional drinks and desserts.">
 
     <img src="images/rock sugar.jpg" alt="Rock Sugar">
 
     <h3>Rock Sugar</h3>
 
     <p>Premium Rock Sugar</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Rock Sugar"
@@ -236,13 +297,20 @@
     </a>
 </div>
 
-<div class="card" data-name="diamond sugar">
+<div class="card"
+     data-name="diamond sugar"
+     data-title="Diamond Sugar"
+     data-image="images/diamond sugar.jpg"
+     data-description="Premium quality diamond sugar crystals for beverages, sweets, and everyday use.">
 
     <img src="images/diamond sugar.jpg" alt="Diamond Sugar">
 
     <h3>Diamond Sugar</h3>
 
     <p>Premium Diamond Sugar</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Diamond Sugar"
@@ -259,13 +327,20 @@
 
 <div class="products">
 
-<div class="card" data-name="cardamom">
+<div class="card"
+     data-name="cardamom"
+     data-title="Cardamom"
+     data-image="images/cardamon.jpg"
+     data-description="Premium green cardamom with a rich aroma. Perfect for tea, sweets, and traditional dishes.">
 
     <img src="images/cardamon.jpg" alt="Cardamom">
 
     <h3>Cardamom</h3>
 
     <p>Premium Green Cardamom</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Cardamom"
@@ -274,13 +349,20 @@
     </a>
 </div>
 
-<div class="card" data-name="cinnamon">
+<div class="card"
+     data-name="cinnamon"
+     data-title="Cinnamon"
+     data-image="images/cinnamon.jpg"
+     data-description="Premium cinnamon sticks with a naturally sweet aroma. Great for desserts and beverages.">
 
     <img src="images/cinnamon.jpg" alt="Cinnamon">
 
     <h3>Cinnamon</h3>
 
     <p>Premium Cinnamon Sticks</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Cinnamon"
@@ -289,13 +371,20 @@
     </a>
 </div>
 
-<div class="card" data-name="cloves">
+<div class="card"
+     data-name="cloves"
+     data-title="Cloves"
+     data-image="images/clove.jpg"
+     data-description="Whole premium cloves with a strong aroma. Ideal for cooking and spice blends.">
 
     <img src="images/clove.jpg" alt="Cloves">
 
     <h3>Cloves</h3>
 
     <p>Premium Whole Cloves</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Cloves"
@@ -304,13 +393,20 @@
     </a>
 </div>
 
-<div class="card" data-name="black pepper">
+<div class="card"
+     data-name="black pepper"
+     data-title="Black Pepper"
+     data-image="images/pepper.jpg"
+     data-description="Premium black pepper known for its bold flavor and freshness.">
 
     <img src="images/pepper.jpg" alt="Black Pepper">
 
     <h3>Black Pepper</h3>
 
     <p>Premium Black Pepper</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Black Pepper"
@@ -319,13 +415,20 @@
     </a>
 </div>
 
-<div class="card" data-name="mustard">
+<div class="card"
+     data-name="mustard"
+     data-title="Mustard Seeds"
+     data-image="images/mustard.jpg"
+     data-description="Fresh mustard seeds for authentic Indian cooking and seasoning.">
 
     <img src="images/mustard.jpg" alt="Mustard">
 
     <h3>Mustard</h3>
 
     <p>Premium Mustard Seeds</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Mustard Seeds"
@@ -334,13 +437,20 @@
     </a>
 </div>
 
-<div class="card" data-name="cumin">
+<div class="card"
+     data-name="cumin"
+     data-title="Cumin Seeds"
+     data-image="images/cumin.jpg"
+     data-description="Premium cumin seeds with a rich earthy flavor. Perfect for curries and spice mixes.">
 
     <img src="images/cumin.jpg" alt="Cumin">
 
     <h3>Cumin</h3>
 
     <p>Premium Cumin Seeds</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Cumin Seeds"
@@ -349,13 +459,20 @@
     </a>
 </div>
 
-<div class="card" data-name="fennel">
+<div class="card"
+     data-name="fennel"
+     data-title="Fennel Seeds"
+     data-image="images/fennel.jpg"
+     data-description="Naturally sweet fennel seeds, ideal after meals and for traditional recipes.">
 
     <img src="images/fennel.jpg" alt="Fennel">
 
     <h3>Fennel</h3>
 
     <p>Premium Fennel Seeds</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Fennel Seeds"
@@ -364,13 +481,20 @@
     </a>
 </div>
 
-<div class="card" data-name="fenugreek">
+<div class="card"
+     data-name="fenugreek"
+     data-title="Fenugreek Seeds"
+     data-image="images/fenugreek.jpg"
+     data-description="Premium fenugreek seeds with a distinctive aroma for Indian cuisine.">
 
     <img src="images/fenugreek.jpg" alt="Fenugreek">
 
     <h3>Fenugreek</h3>
 
     <p>Premium Fenugreek Seeds</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Fenugreek Seeds"
@@ -379,13 +503,20 @@
     </a>
 </div>
 
-<div class="card" data-name="poppy seeds">
+<div class="card"
+     data-name="poppy seeds"
+     data-title="Poppy Seeds"
+     data-image="images/poppy seed.jpg"
+     data-description="High-quality poppy seeds, perfect for baking and traditional recipes.">
 
     <img src="images/poppy seed.jpg" alt="Poppy Seeds">
 
     <h3>Poppy Seeds</h3>
 
     <p>Premium Poppy Seeds</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Poppy Seeds"
@@ -394,13 +525,20 @@
     </a>
 </div>
 
-<div class="card" data-name="bay leaves">
+<div class="card"
+     data-name="bay leaves"
+     data-title="Bay Leaves"
+     data-image="images/bay leaf.jpg"
+     data-description="Premium bay leaves that add rich aroma and flavor to curries and biryanis.">
 
     <img src="images/bay leaf.jpg" alt="Bay Leaf">
 
     <h3>Bay Leaf</h3>
 
     <p>Premium Bay Leaves</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Bay Leaves"
@@ -409,13 +547,20 @@
     </a>
 </div>
 
-<div class="card" data-name="kalpasi">
+<div class="card"
+     data-name="kalpasi"
+     data-title="Kalpasi"
+     data-image="images/kalpasi.jpg"
+     data-description="Authentic Kalpasi (Black Stone Flower), an essential spice for South Indian dishes.">
 
     <img src="images/kalpasi.jpg" alt="Kalpasi">
 
     <h3>Kalpasi</h3>
 
     <p>Premium Kalpasi</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Kalpasi"
@@ -424,13 +569,20 @@
     </a>
 </div>
 
-<div class="card" data-name="star anise">
+<div class="card"
+     data-name="star anise"
+     data-title="Star Anise"
+     data-image="images/star anise.jpg"
+     data-description="Premium star anise with a sweet licorice flavor, perfect for biryanis and spice blends.">
     
     <img src="images/star anise.jpg" alt="Star Anise">
 
     <h3>Star Anise</h3>
 
     <p>Premium Star Anise</p>
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I want to order Star Anise"
@@ -502,6 +654,40 @@ Tamil Nadu, India</p>
 </p>
 
 </footer>
+
+<div id="productModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close-btn">&times;</span>
+
+        <img id="modalImage" src="" alt="Product Image">
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+    </div>
+
+</div>
+</footer>
+
+<div id="cartPanel" class="cart-panel">
+
+    <h2>🛒 Shopping Cart</h2>
+
+    <ul id="cartItems"></ul>
+
+    <button id="closeCart">
+        Close
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
 
 <script src="script.js"></script>
 
