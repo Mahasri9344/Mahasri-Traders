@@ -1,3 +1,7 @@
+html{
+    scroll-behavior:smooth;
+}
+
 *{
     margin:0;
     padding:0;
@@ -10,9 +14,13 @@ body{
 }
 
 header{
-    background:#8B4513;
-    color:white;
+    background:#f8f9f9;
+    color:rgba(16, 2, 2, 0.889);
     padding:15px;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 header h1{
@@ -27,14 +35,18 @@ nav{
 }
 
 nav a{
-    color:white;
+    color:rgb(9, 9, 9);
     text-decoration:none;
-    padding:10px 20px;
+    padding:12px 20px;
+    margin:5px;
+    font-weight:bold;
+    border-radius:30px;
+    transition:0.3s ease;
 }
 
 nav a:hover{
-    background:#A0522D;
-    border-radius:5px;
+    background:rgba(0, 0, 0, 0.929);
+    color:#e6e4e2;
 }
 
 .hero{
@@ -44,14 +56,17 @@ nav a:hover{
     background-repeat: no-repeat;
 
     width: 100%;
-    height: 500px;
+    min-height: 90vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    color: white;
     text-align: center;
+    color: white;
+
+    position: relative;
+    overflow: hidden;
 }
 
 .hero h2{
@@ -74,17 +89,26 @@ section{
 }
 
 .card{
-    width:250px;
     background:white;
-    border-radius:10px;
+    border-radius:15px;
     overflow:hidden;
-    box-shadow:0 5px 10px rgba(0,0,0,.2);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s ease;
+    text-align:center;
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
 }
 
 .card img{
     width:100%;
-    height:180px;
+    height:220px;
     object-fit:cover;
+    transition:0.3s ease;
+}
+.card:hover img{
+    transform:scale(1.05);
 }
 
 .card h3{
@@ -116,28 +140,11 @@ footer{
     text-align:center;
     padding:20px;
 }
-.hero{
-    background-image:url("images/hero.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    height:550px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    position:relative;
-}
-
 .hero::before{
     content:"";
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,0.45);
+    background:rgba(0,0,0,0.12);
 }
 
 .hero-content{
@@ -185,4 +192,19 @@ footer{
 .btn-outline:hover{
     background:white;
     color:#8B4513;
+}
+.order-btn{
+    display:inline-block;
+    margin:15px;
+    padding:10px 18px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.order-btn:hover{
+    background:#1da851;
 }
