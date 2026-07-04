@@ -89,12 +89,11 @@ section{
 }
 
 .card{
+    width:280px;
     background:white;
-    border-radius:15px;
+    border-radius:12px;
     overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
-    transition:0.3s ease;
-    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
 }
 .card:hover{
     transform:translateY(-10px);
@@ -103,9 +102,9 @@ section{
 
 .card img{
     width:100%;
-    height:220px;
-    object-fit:cover;
-    transition:0.3s ease;
+    height:180px;
+    object-fit:contain;
+    background:#fff;
 }
 .card:hover img{
     transform:scale(1.05);
@@ -207,4 +206,98 @@ footer{
 
 .order-btn:hover{
     background:#1da851;
+}
+
+.products-category{
+    font-size:48px;
+    font-weight:700;
+    text-align:center;
+    color:#0d0d0dde;
+
+    width:100%;
+
+    margin:70px 0 40px;
+    padding:20px;
+
+    background:linear-gradient(to right,#ac97d5,#e899e1,#9573bb);
+
+    border-left:8px solid #000000f5;
+    border-right:8px solid #131212;
+
+    border-radius:12px;
+}
+
+.about{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.about h2{
+    font-size:42px;
+    color:#000000dd;
+    margin-bottom:25px;
+}
+
+.about p{
+    font-size:20px;
+    line-height:1.8;
+    color:#000000e4;
+}
+
+.about-boxes{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+.about-card{
+    width:280px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+}
+
+.about-card h3{
+    color:#010101e1;
+    margin-bottom:15px;
+}
+
+#searchBox{
+    width:60%;
+    max-width:500px;
+    padding:15px;
+    font-size:18px;
+    border:2px solid #000000d9;
+    border-radius:10px;
+    outline:none;
+    margin-bottom:30px;
+}
+
+#searchBox:focus{
+    box-shadow:0 0 10px rgb(247, 247, 247);
+}
+
+.details-btn{
+    width:90%;
+    padding:12px;
+    margin:10px;
+    border:none;
+    border-radius:8px;
+    background:black;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.details-btn:hover{
+    background:#ebe6ea;
 }

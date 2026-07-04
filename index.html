@@ -44,17 +44,38 @@
 
 </section>
 
-<section id="about">
+<section id="about" class="about">
 
-<h2>About Us</h2>
+    <h2>About Mahasri Traders</h2>
 
-<br>
+    <p>
+        Mahasri Traders is a trusted supplier of premium-quality dry fruits,
+        nuts and spices. We are committed to
+        delivering fresh, hygienically packed, and carefully selected
+        products at affordable prices.
+    </p>
 
-<p>
-Mahasri Traders is your trusted destination for premium quality nuts,
-dry fruits, and authentic spices.
-We provide fresh products at the best prices with excellent customer service.
-</p>
+    <div class="about-boxes">
+
+        <div class="about-card">
+            <h3>🌿 Premium Quality</h3>
+
+            <p>Only carefully selected products.</p>
+        </div>
+
+        <div class="about-card">
+            <h3>🚚 Fast Delivery</h3>
+
+            <p>Quick delivery.</p>
+        </div>
+
+        <div class="about-card">
+            <h3>🤝 Trusted Service</h3>
+
+            <p>Customer satisfaction is our priority.</p>
+        </div>
+
+    </div>
 
 </section>
 
@@ -62,16 +83,38 @@ We provide fresh products at the best prices with excellent customer service.
 
 <h2>Our Products</h2>
 
+<br>
+
+<input
+    type="text"
+    id="searchBox"
+    placeholder="🔍 Search products..."
+>
+
 <br><br>
+<p id="productCount">
+    Showing 21 products
+</p>
+
+<br>
+
+<h2 class="products-category">🧺 Dry Fruits</h2>
+
+<br>
 
 <div class="products">
 
-<div class="card">
+<div class="card" data-name="almonds">
+
     <img src="images/almonds.jpg" alt="Almonds">
 
     <h3>Almonds</h3>
 
     <p>Fresh Premium Almonds</p>
+
+    <button class="details-btn">
+    View Details
+</button>
 
     <a class="order-btn"
        href="https://wa.me/919876543210?text=I%20want%20to%20order%20Almonds"
@@ -80,7 +123,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="cashews">
+
     <img src="images/cashew.jpg" alt="Cashews">
 
     <h3>Cashews</h3>
@@ -94,7 +138,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="pistachios">
+
     <img src="images/pistachio.jpg" alt="Pistachios">
 
     <h3>Pistachios</h3>
@@ -108,7 +153,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="raisins">
+
     <img src="images/raisins.jpg" alt="Raisins">
 
     <h3>Raisins</h3>
@@ -122,7 +168,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="black raisins">
+
     <img src="images/black raisins.jpg" alt="Black Raisins">
 
     <h3>Black Raisins</h3>
@@ -136,7 +183,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="figs">
+
     <img src="images/fig.jpg" alt="Figs">
 
     <h3>Figs</h3>
@@ -150,7 +198,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="walnuts">
+
     <img src="images/walnut.jpg" alt="Walnuts">
 
     <h3>Walnuts</h3>
@@ -164,7 +213,16 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+</div>
+
+<h2 class="products-category">🍬 Natural Sugars</h2>
+
+<br>
+
+<div class="products">
+
+<div class="card" data-name="rock sugar">
+
     <img src="images/rock sugar.jpg" alt="Rock Sugar">
 
     <h3>Rock Sugar</h3>
@@ -178,7 +236,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="diamond sugar">
+
     <img src="images/diamond sugar.jpg" alt="Diamond Sugar">
 
     <h3>Diamond Sugar</h3>
@@ -192,7 +251,16 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+</div>
+
+<h2 class="products-category">🌿 Spices</h2>
+
+<br>
+
+<div class="products">
+
+<div class="card" data-name="cardamom">
+
     <img src="images/cardamon.jpg" alt="Cardamom">
 
     <h3>Cardamom</h3>
@@ -206,7 +274,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="cinnamon">
+
     <img src="images/cinnamon.jpg" alt="Cinnamon">
 
     <h3>Cinnamon</h3>
@@ -220,7 +289,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="cloves">
+
     <img src="images/clove.jpg" alt="Cloves">
 
     <h3>Cloves</h3>
@@ -234,7 +304,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="black pepper">
+
     <img src="images/pepper.jpg" alt="Black Pepper">
 
     <h3>Black Pepper</h3>
@@ -248,7 +319,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="mustard">
+
     <img src="images/mustard.jpg" alt="Mustard">
 
     <h3>Mustard</h3>
@@ -262,7 +334,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="cumin">
+
     <img src="images/cumin.jpg" alt="Cumin">
 
     <h3>Cumin</h3>
@@ -276,7 +349,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="fennel">
+
     <img src="images/fennel.jpg" alt="Fennel">
 
     <h3>Fennel</h3>
@@ -290,7 +364,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="fenugreek">
+
     <img src="images/fenugreek.jpg" alt="Fenugreek">
 
     <h3>Fenugreek</h3>
@@ -304,7 +379,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="poppy seeds">
+
     <img src="images/poppy seed.jpg" alt="Poppy Seeds">
 
     <h3>Poppy Seeds</h3>
@@ -318,7 +394,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="bay leaves">
+
     <img src="images/bay leaf.jpg" alt="Bay Leaf">
 
     <h3>Bay Leaf</h3>
@@ -332,7 +409,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="kalpasi">
+
     <img src="images/kalpasi.jpg" alt="Kalpasi">
 
     <h3>Kalpasi</h3>
@@ -346,7 +424,8 @@ We provide fresh products at the best prices with excellent customer service.
     </a>
 </div>
 
-<div class="card">
+<div class="card" data-name="star anise">
+    
     <img src="images/star anise.jpg" alt="Star Anise">
 
     <h3>Star Anise</h3>
