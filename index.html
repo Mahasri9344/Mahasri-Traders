@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mahasri Traders | Nuts & Spices</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -20,6 +20,10 @@
 <a href="#location">Location</a>
 <a href="#" id="cartIcon">
     🛒 Cart (<span id="cartCount">0</span>)</a>
+    <a href="wishlist.html" id="wishlistIcon">
+❤️ Wishlist
+(<span id="wishlistCount">0</span>)
+</a>
 </nav>
 
 </header>
@@ -84,7 +88,45 @@
 <section id="products">
 
 <h2>Our Products</h2>
+<div class="filter-buttons">
 
+    <button class="filter-btn active" data-filter="all">
+        All
+    </button>
+
+    <button class="filter-btn" data-filter="dryfruits">
+        🥜 Dry Fruits
+    </button>
+
+    <button class="filter-btn" data-filter="sugar">
+        🍬 Natural Sugars
+    </button>
+
+    <button class="filter-btn" data-filter="spices">
+        🌿 Spices
+    </button>
+
+</div>
+
+
+<br>
+<div class="sort-container">
+
+    <label for="sortProducts"><strong>Sort By:</strong></label>
+
+    <select id="sortProducts">
+
+        <option value="default">Default</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+        <option value="a-z">Name: A-Z</option>
+        <option value="z-a">Name: Z-A</option>
+
+    </select>
+
+</div>
+
+<br>
 <br>
 
 <input
@@ -107,6 +149,7 @@
 <div class="products">
 
 <div class="card"
+     data-category="dryfruits"
      data-name="almonds"
      data-title="Almonds"
      data-image="images/almonds.jpg"
@@ -115,10 +158,31 @@
     
 
     <img src="images/almonds.jpg" alt="Almonds">
+    <button class="wishlist-btn">
+    🤍
+</button>
+    <span class="badge best-seller">🔥 Best Seller</span>
 
     <h3>Almonds</h3>
+    <div class="rating">
+
+⭐⭐⭐⭐⭐ <span>(4.9)</span>
+
+</div>
 
     <p>Fresh Premium Almonds</p>
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="220">250g - ₹220</option>
+    <option value="430">500g - ₹430</option>
+    <option value="850" selected>1kg - ₹850</option>
+</select>
+
+<br><br>
 
     <button class="details-btn">
 View Details
@@ -128,143 +192,241 @@ View Details
 🛒 Add to Cart
 </button>
 
-<a class="order-btn"
-href="https://wa.me/919876543210?text=I want to order Almonds"
-target="_blank">
-Order on WhatsApp
-</a>
-
 </div>
 
 <div class="card"
+     data-category="dryfruits"
      data-name="cashews"
      data-title="Cashews"
      data-image="images/cashew.jpg"
+     data-price="950"
      data-description="Premium Quality Cashew Nuts. Rich in protein, healthy fats, and essential minerals.">
 
     <img src="images/cashew.jpg" alt="Cashews">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Cashews</h3>
 
     <p>Premium Quality Cashew Nuts</p>
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="250">250g - ₹250</option>
+    <option value="480">500g - ₹480</option>
+    <option value="950" selected>1kg - ₹950</option>
+</select>
+
+<br><br>
     <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Cashews"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+    data-category="dryfruits"
      data-name="pistachios"
      data-title="Pistachios"
      data-image="images/pistachio.jpg"
+     data-price="1200"
      data-description="Premium Pistachios packed with fiber, protein, and antioxidants.">
 
     <img src="images/pistachio.jpg" alt="Pistachios">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Pistachios</h3>
 
     <p>Premium Quality Pistachios</p>
-    <button class="details-btn">
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="290">250g - ₹290</option>
+    <option value="560">500g - ₹560</option>
+    <option value="1100" selected>1kg - ₹1100</option>
+</select>
+
+<br><br>
+    
+<button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Pistachios"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+     data-category="dryfruits"
      data-name="raisins"
      data-title="Raisins"
      data-image="images/raisins.jpg"
+     data-price="800"
      data-description="Naturally sweet raisins rich in iron, calcium, and antioxidants.">
 
     <img src="images/raisins.jpg" alt="Raisins">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Raisins</h3>
 
     <p>Fresh Premium Raisins</p>
-    <button class="details-btn">
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="120">250g - ₹120</option>
+    <option value="230">500g - ₹230</option>
+    <option value="450" selected>1kg - ₹450</option>
+</select>
+
+<br><br>
+    
+<button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Raisins"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
+<a class="order-btn"
+   href="https://wa.me/919876543210?text=I want to order Raisins"
+   target="_blank">
+   Order on WhatsApp
+</a>
 </div>
 
-<div class="card"
+<div class="card"  
+     data-category="dryfruits"
      data-name="black raisins"
      data-title="Black Raisins"
      data-image="images/black raisins.jpg"
+     data-price="950"
      data-description="Premium Black Raisins rich in iron, vitamins, and natural sweetness.">
 
     <img src="images/black raisins.jpg" alt="Black Raisins">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Black Raisins</h3>
 
     <p>Premium Black Raisins</p>
-    <button class="details-btn">
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="150">250g - ₹150</option>
+    <option value="280">500g - ₹280</option>
+    <option value="550" selected>1kg - ₹550</option>
+</select>
+
+<br><br>
+    
+<button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Black Raisins"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+     data-category="dryfruits"
      data-name="figs"
      data-title="Figs"
      data-image="images/fig.jpg"
+     data-price="950"
      data-description="Premium dried figs packed with fiber, calcium, and antioxidants.">
     <img src="images/fig.jpg" alt="Figs">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Figs</h3>
 
     <p>Premium Dried Figs</p>
-    <button class="details-btn">
+<p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="240">250g - ₹240</option>
+    <option value="460">500g - ₹460</option>
+    <option value="900" selected>1kg - ₹900</option>
+</select>
+
+<br><br>
+   <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Figs"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
-<div class="card"
+<div class="card"  
+     data-category="dryfruits"
      data-name="walnuts"
      data-title="Walnuts"
      data-image="images/walnut.jpg"
+     data-price="1600"
      data-description="Premium walnuts rich in Omega-3 fatty acids and antioxidants.">
 
     <img src="images/walnut.jpg" alt="Walnuts">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Walnuts</h3>
 
     <p>Premium Quality Walnuts</p>
-    <button class="details-btn">
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="310">250g - ₹310</option>
+    <option value="620">500g - ₹620</option>
+    <option value="1200" selected>1kg - ₹1200</option>
+</select>
+
+<br><br>
+   <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Walnuts"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 </div>
@@ -276,47 +438,79 @@ Order on WhatsApp
 <div class="products">
 
 <div class="card"
+    data-category="sugar"
      data-name="rock sugar"
      data-title="Rock Sugar"
      data-image="images/rock sugar.jpg"
+     data-price="800"
      data-description="Pure natural rock sugar with a clean, sweet taste. Perfect for traditional drinks and desserts.">
 
     <img src="images/rock sugar.jpg" alt="Rock Sugar">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Rock Sugar</h3>
 
     <p>Premium Rock Sugar</p>
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="50">250g - ₹50</option>
+    <option value="95">500g - ₹95</option>
+    <option value="180" selected>1kg - ₹180</option>
+</select>
+
+<br><br>
     <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Rock Sugar"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+    data-category="sugar"
      data-name="diamond sugar"
      data-title="Diamond Sugar"
      data-image="images/diamond sugar.jpg"
+     data-price="900"
      data-description="Premium quality diamond sugar crystals for beverages, sweets, and everyday use.">
 
     <img src="images/diamond sugar.jpg" alt="Diamond Sugar">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Diamond Sugar</h3>
 
     <p>Premium Diamond Sugar</p>
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
     <button class="details-btn">
+        <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="60">250g - ₹60</option>
+    <option value="110">500g - ₹110</option>
+    <option value="220" selected>1kg - ₹220</option>
+</select>
+
+<br><br>
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Diamond Sugar"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 </div>
@@ -328,267 +522,458 @@ Order on WhatsApp
 <div class="products">
 
 <div class="card"
+    data-category="spices"
      data-name="cardamom"
      data-title="Cardamom"
      data-image="images/cardamon.jpg"
+     data-price="1600"
      data-description="Premium green cardamom with a rich aroma. Perfect for tea, sweets, and traditional dishes.">
 
     <img src="images/cardamon.jpg" alt="Cardamom">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Cardamom</h3>
 
     <p>Premium Green Cardamom</p>
+    <p class="stock out-stock">
+    🔴 Out of Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="700">250g - ₹700</option>
+    <option value="1400">500g - ₹1400</option>
+    <option value="2800" selected>1kg - ₹2800</option>
+</select>
+
+<br><br>
     <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Cardamom"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn" disabled>
+    Out of Stock
+</button>
+
 </div>
 
 <div class="card"
+    data-category="spices"
      data-name="cinnamon"
      data-title="Cinnamon"
      data-image="images/cinnamon.jpg"
+     data-price="1000"
      data-description="Premium cinnamon sticks with a naturally sweet aroma. Great for desserts and beverages.">
 
     <img src="images/cinnamon.jpg" alt="Cinnamon">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Cinnamon</h3>
 
     <p>Premium Cinnamon Sticks</p>
-    <button class="details-btn">
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="180">250g - ₹180</option>
+    <option value="350">500g - ₹350</option>
+    <option value="700" selected>1kg - ₹700</option>
+</select>
+
+<br><br>
+   <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Cinnamon"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+    data-category="spices"
      data-name="cloves"
      data-title="Cloves"
      data-image="images/clove.jpg"
+     data-price="900"
      data-description="Whole premium cloves with a strong aroma. Ideal for cooking and spice blends.">
 
     <img src="images/clove.jpg" alt="Cloves">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Cloves</h3>
 
     <p>Premium Whole Cloves</p>
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="230">250g - ₹230</option>
+    <option value="460">500g - ₹460</option>
+    <option value="900" selected>1kg - ₹900</option>
+</select>
+
+<br><br>
     <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Cloves"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+    data-category="spices"
      data-name="black pepper"
      data-title="Black Pepper"
      data-image="images/pepper.jpg"
+     data-price="1000"
      data-description="Premium black pepper known for its bold flavor and freshness.">
 
     <img src="images/pepper.jpg" alt="Black Pepper">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Black Pepper</h3>
 
     <p>Premium Black Pepper</p>
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="220">250g - ₹220</option>
+    <option value="430">500g - ₹430</option>
+    <option value="850" selected>1kg - ₹850</option>
+</select>
+
+<br><br>
     <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Black Pepper"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+     data-category="spices"
      data-name="mustard"
      data-title="Mustard Seeds"
      data-image="images/mustard.jpg"
+     data-price="700"
      data-description="Fresh mustard seeds for authentic Indian cooking and seasoning.">
 
     <img src="images/mustard.jpg" alt="Mustard">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Mustard</h3>
 
     <p>Premium Mustard Seeds</p>
-    <button class="details-btn">
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="50">250g - ₹50</option>
+    <option value="95">500g - ₹95</option>
+    <option value="180" selected>1kg - ₹180</option>
+</select>
+
+<br><br>
+   <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Mustard Seeds"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+     data-category="spices"
      data-name="cumin"
      data-title="Cumin Seeds"
      data-image="images/cumin.jpg"
+     data-price="450"
      data-description="Premium cumin seeds with a rich earthy flavor. Perfect for curries and spice mixes.">
 
     <img src="images/cumin.jpg" alt="Cumin">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Cumin</h3>
 
     <p>Premium Cumin Seeds</p>
-    <button class="details-btn">
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="120">250g - ₹120</option>
+    <option value="230">500g - ₹230</option>
+    <option value="450" selected>1kg - ₹450</option>
+</select>
+
+<br><br>
+   <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Cumin Seeds"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+     data-category="spices"
      data-name="fennel"
      data-title="Fennel Seeds"
      data-image="images/fennel.jpg"
+     data-price="500"
      data-description="Naturally sweet fennel seeds, ideal after meals and for traditional recipes.">
 
     <img src="images/fennel.jpg" alt="Fennel">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Fennel</h3>
 
     <p>Premium Fennel Seeds</p>
-    <button class="details-btn">
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="80">250g - ₹80</option>
+    <option value="160">500g - ₹160</option>
+    <option value="300" selected>1kg - ₹300</option>
+</select>
+
+<br><br>
+   <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Fennel Seeds"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+     data-category="spices"
      data-name="fenugreek"
      data-title="Fenugreek Seeds"
      data-image="images/fenugreek.jpg"
+     data-price="350"
      data-description="Premium fenugreek seeds with a distinctive aroma for Indian cuisine.">
 
     <img src="images/fenugreek.jpg" alt="Fenugreek">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Fenugreek</h3>
 
     <p>Premium Fenugreek Seeds</p>
-    <button class="details-btn">
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="50">250g - ₹50</option>
+    <option value="95">500g - ₹95</option>
+    <option value="180" selected>1kg - ₹180</option>
+</select>
+
+<br><br>
+   <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Fenugreek Seeds"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+     data-category="spices"
      data-name="poppy seeds"
      data-title="Poppy Seeds"
      data-image="images/poppy seed.jpg"
+     data-price="600"
      data-description="High-quality poppy seeds, perfect for baking and traditional recipes.">
 
     <img src="images/poppy seed.jpg" alt="Poppy Seeds">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Poppy Seeds</h3>
 
     <p>Premium Poppy Seeds</p>
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="420">250g - ₹420</option>
+    <option value="820">500g - ₹820</option>
+    <option value="1600" selected>1kg - ₹1600</option>
+</select>
+
+<br><br>
     <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Poppy Seeds"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+     data-category="spices"
      data-name="bay leaves"
      data-title="Bay Leaves"
      data-image="images/bay leaf.jpg"
+     data-price="250"
      data-description="Premium bay leaves that add rich aroma and flavor to curries and biryanis.">
 
     <img src="images/bay leaf.jpg" alt="Bay Leaf">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Bay Leaf</h3>
 
     <p>Premium Bay Leaves</p>
-    <button class="details-btn">
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="70">250g - ₹70</option>
+    <option value="130">500g - ₹130</option>
+    <option value="250" selected>1kg - ₹250</option>
+</select>
+
+<br><br>
+   <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Bay Leaves"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 <div class="card"
+      data-category="spices"
      data-name="kalpasi"
      data-title="Kalpasi"
      data-image="images/kalpasi.jpg"
+     data-price="500"
      data-description="Authentic Kalpasi (Black Stone Flower), an essential spice for South Indian dishes.">
 
     <img src="images/kalpasi.jpg" alt="Kalpasi">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Kalpasi</h3>
 
     <p>Premium Kalpasi</p>
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="310">250g - ₹310</option>
+    <option value="620">500g - ₹620</option>
+    <option value="1200" selected>1kg - ₹1200</option>
+</select>
+
+<br><br>
     <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Kalpasi"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
 </div>
 
 <div class="card"
+     data-category="spices"
      data-name="star anise"
      data-title="Star Anise"
      data-image="images/star anise.jpg"
+     data-price="900"
      data-description="Premium star anise with a sweet licorice flavor, perfect for biryanis and spice blends.">
     
     <img src="images/star anise.jpg" alt="Star Anise">
+    <button class="wishlist-btn">
+    🤍
+</button>
 
     <h3>Star Anise</h3>
 
     <p>Premium Star Anise</p>
+    <p class="stock in-stock">
+    🟢 In Stock
+</p>
+    <label><strong>Select Pack Size:</strong></label>
+
+<select class="pack-size">
+    <option value="230">250g - ₹230</option>
+    <option value="460">500g - ₹460</option>
+    <option value="900" selected>1kg - ₹900</option>
+</select>
+
+<br><br>
     <button class="details-btn">
     View Details
 </button>
 
-    <a class="order-btn"
-       href="https://wa.me/919876543210?text=I want to order Star Anise"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<button class="cart-btn">
+    🛒 Add to Cart
+</button>
+
 </div>
 
 </div>
@@ -615,15 +1000,49 @@ Order on WhatsApp
 
 </section>
 
-<section id="contact">
+<section id="contact" class="contact">
 
-<h2>Contact Us</h2>
+<h2>📞 Contact Us</h2>
 
-<br>
+<div class="contact-container">
 
-<p>📞 Phone : +91-9876543210</p>
+    <div class="contact-info">
 
-<p>📧 Email : info@mahasritraders.com</p>
+        <h3>🌿 Mahasri Traders</h3>
+
+        <p><strong>📞 Phone:</strong> +91 93445 13062</p>
+
+        <p><strong>📧 Email:</strong> info@mahasritraders.com</p>
+
+        <p><strong>📍 Address:</strong> Your Shop Address, Tamil Nadu</p>
+
+        <p><strong>🕒 Business Hours:</strong></p>
+
+        <p>Monday - Saturday</p>
+
+        <p>9:00 AM - 8:00 PM</p>
+
+        <br>
+
+        <a href="https://wa.me/919344513062"
+           class="btn"
+           target="_blank">
+
+            💬 Chat on WhatsApp
+
+        </a>
+
+    </div>
+
+    <div class="contact-map">
+
+        <!-- Google Map will be added later -->
+
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.0698064445837!2d77.00968807451575!3d10.65168506148331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8392778187cb7%3A0x6c204885d9031e7f!2sMAHASRI%20TRADERS%20POLLACHI!5e0!3m2!1sen!2sin!4v1783184195385!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    </div>
+
+</div>
 
 </section>
 
@@ -647,14 +1066,85 @@ Tamil Nadu, India</p>
 
 </div>
 
-<footer>
+<div class="whatsapp-order-section">
 
-<p>
-© 2026 Mahasri Traders. All Rights Reserved.
-</p>
+    <h2>Need Help Choosing Products?</h2>
+
+    <p>
+        Chat with Mahasri Traders on WhatsApp for product enquiries,
+        bulk orders, and assistance.
+    </p>
+
+    <a href="https://wa.me/919344513062"
+       target="_blank"
+       class="main-whatsapp-btn">
+
+        📲 Chat with Us on WhatsApp
+
+    </a>
+
+</div>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h3>🌿 Mahasri Traders</h3>
+
+            <p>
+                Premium Quality Nuts, Dry Fruits & Spices.
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#products">Products</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Contact</h3>
+
+            <p>📞 +91 93445 13062</p>
+
+            <p>📧 info@mahasritraders.com</p>
+
+            <p>📍 Tamil Nadu, India</p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Follow Us</h3>
+
+            <a href="#">Instagram</a>
+
+            <a href="#">Facebook</a>
+
+            <a href="#">WhatsApp</a>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Mahasri Traders | All Rights Reserved
+    </p>
 
 </footer>
-
 <div id="productModal" class="modal">
 
     <div class="modal-content">
@@ -674,9 +1164,50 @@ Tamil Nadu, India</p>
 
 <div id="cartPanel" class="cart-panel">
 
-    <h2>🛒 Shopping Cart</h2>
+    <h3>🛒 Shopping Cart</h3>
 
-    <ul id="cartItems"></ul>
+<ul id="cartItems"></ul>
+
+<hr>
+
+<p>
+Subtotal:
+<strong>₹<span id="cartSubtotal">0</span></strong>
+</p>
+
+<p>
+Delivery:
+<strong id="deliveryCharge">FREE</strong>
+</p>
+
+<p>
+GST (5%):
+<strong>₹<span id="cartGST">0</span></strong>
+</p>
+
+<h3>
+Grand Total:
+₹<span id="cartTotal">0</span>
+</h3>
+<div class="coupon-box">
+
+    <input
+        type="text"
+        id="couponCode"
+        placeholder="Enter Coupon Code"
+    >
+
+    <button id="applyCoupon">
+        Apply
+    </button>
+
+</div>
+
+<p id="couponMessage"></p>
+
+<button id="checkoutBtn">
+Proceed to Checkout
+</button>
 
     <button id="closeCart">
         Close
@@ -684,12 +1215,47 @@ Tamil Nadu, India</p>
 
 </div>
 
-<script src="script.js"></script>
+<div id="checkoutModal" class="checkout-modal">
 
-</body>
-</html>
+    <div class="checkout-content">
 
-<script src="script.js"></script>
+        <span id="closeCheckout">&times;</span>
+
+        <h2>Checkout</h2>
+
+        <input
+            type="text"
+            id="customerName"
+            placeholder="Full Name"
+        >
+
+        <input
+            type="tel"
+            id="customerPhone"
+            placeholder="Mobile Number"
+        >
+
+        <input
+            type="email"
+            id="customerEmail"
+            placeholder="Email"
+        >
+
+        <textarea
+            id="customerAddress"
+            placeholder="Delivery Address"
+        ></textarea>
+
+        <button id="placeOrder">
+            Place Order
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+<script src="js/script.js"></script>
 
 </body>
 </html>
