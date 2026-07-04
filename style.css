@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+header{
+    background:#8B4513;
+    color:white;
+    padding:15px;
+}
+
+header h1{
+    text-align:center;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+}
+
+nav a:hover{
+    background:#A0522D;
+    border-radius:5px;
+}
+
+.hero{
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.hero h2{
+    font-size:45px;
+    background:rgba(0,0,0,0.5);
+    padding:20px;
+    border-radius:10px;
+}
+
+section{
+    padding:50px;
+    text-align:center;
+}
+
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    width:250px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+}
+
+.whatsapp a{
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:18px;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.hero{
+    background-image:url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    height:550px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+}
+
+.hero h2{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    background:#8B4513;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#A0522D;
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:#8B4513;
+}

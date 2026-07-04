@@ -4,121 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mahasri Traders | Nuts & Spices</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    background:#f8f8f8;
-}
-
-header{
-    background:#8B4513;
-    color:white;
-    padding:15px;
-}
-
-header h1{
-    text-align:center;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    margin-top:10px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:10px 20px;
-}
-
-nav a:hover{
-    background:#A0522D;
-    border-radius:5px;
-}
-
-.hero{
-    background:url('https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?w=1200') center/cover;
-    height:450px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    text-align:center;
-}
-
-.hero h2{
-    font-size:45px;
-    background:rgba(0,0,0,0.5);
-    padding:20px;
-    border-radius:10px;
-}
-
-section{
-    padding:50px;
-    text-align:center;
-}
-
-.products{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-}
-
-.card{
-    width:250px;
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 5px 10px rgba(0,0,0,.2);
-}
-
-.card img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
-}
-
-.card h3{
-    margin:15px;
-}
-
-.card p{
-    padding:0 15px 20px;
-}
-
-.whatsapp{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-}
-
-.whatsapp a{
-    background:#25D366;
-    color:white;
-    padding:15px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-size:18px;
-}
-
-footer{
-    background:#333;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -137,11 +23,25 @@ footer{
 </header>
 
 <section class="hero" id="home">
-<h2>
-Premium Quality Nuts & Spices
-<br><br>
-Fresh • Pure • Affordable
-</h2>
+
+    <div class="hero-content">
+
+        <h2>Premium Quality Nuts & Spices</h2>
+
+        <p>
+            Fresh • Pure • Affordable
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#products" class="btn">Shop Now</a>
+
+            <a href="#contact" class="btn btn-outline">Contact Us</a>
+
+        </div>
+
+    </div>
+
 </section>
 
 <section id="about">
@@ -167,21 +67,131 @@ We provide fresh products at the best prices with excellent customer service.
 <div class="products">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1508747703725-719777637510?w=600">
+<img src="images/almonds.jpg" alt="Almonds">
 <h3>Almonds</h3>
 <p>Fresh Premium Almonds</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1615486363978-f79d8757805c?w=600">
-<h3>Cashews</h3>
+<img src="images/cashew.jpg" alt="cashew">
+<h3>Cashew</h3>
 <p>High Quality Cashew Nuts</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600">
-<h3>Spices</h3>
-<p>Turmeric, Pepper, Cardamom & More</p>
+<img src="images/pistachio.jpg" alt="pistachio">
+<h3>pistachio</h3>
+<p>High Quality pistachio </p>
+</div>
+
+<div class="card">
+<img src="images/raisins.jpg" alt="raisins">
+<h3>raisins</h3>
+<p>High Quality raisins</p>
+</div>
+
+<div class="card">
+<img src="images/black raisins.jpg" alt="black raisins">
+<h3>black raisins</h3>
+<p>High Quality black raisins</p>
+</div>
+
+
+<div class="card">
+<img src="images/fig.jpg" alt="fig">
+<h3>fig</h3>
+<p>High Quality fig</p>
+</div>
+
+
+<div class="card">
+<img src="images/walnut.jpg" alt="walnut">
+<h3>walnut</h3>
+<p>High Quality walnut</p>
+</div>
+
+<div class="card">
+<img src="images/rock sugar.jpg" alt="rock sugar">
+<h3>rock sugar</h3>
+<p>High Quality rock sugar</p>
+</div>
+
+<div class="card">
+<img src="images/diamond sugar.jpg" alt="diamond sugar">
+<h3>diamond sugar</h3>
+<p>High Quality diamond sugar</p>
+</div>
+
+<div class="card">
+<img src="images/cardamon.jpg" alt="cardamon">
+<h3>cardamon</h3>
+<p>High Quality cardamon</p>
+</div>
+
+<div class="card">
+<img src="images/cinnamon.jpg" alt="cinnamon">
+<h3>cinnamon</h3>
+<p>High Quality cinnamon</p>
+</div>
+
+<div class="card">
+<img src="images/clove.jpg" alt="clove">
+<h3>clove</h3>
+<p>High Quality clove</p>
+</div>
+
+<div class="card">
+<img src="images/pepper.jpg" alt="pepper">
+<h3>pepper</h3>
+<p>High Quality pepper</p>
+</div>
+
+<div class="card">
+<img src="images/mustard.jpg" alt="mustard">
+<h3>mustard</h3>
+<p>High Quality mustard</p>
+</div>
+
+<div class="card">
+<img src="images/cumin.jpg" alt="cumin">
+<h3>cumin</h3>
+<p>High Quality cumin</p>
+</div>
+
+<div class="card">
+<img src="images/fennel.jpg" alt="fennel">
+<h3>fennel</h3>
+<p>High Quality fennel</p>
+</div>
+
+<div class="card">
+<img src="images/fenugreek.jpg" alt="fenugreek">
+<h3>fenugreek</h3>
+<p>High Quality fenugreek</p>
+</div>
+
+<div class="card">
+<img src="images/poppy seed.jpg" alt="poppy seed">
+<h3>poppy seed</h3>
+<p>High Quality poppy seed</p>
+</div>
+
+<div class="card">
+<img src="images/bay leaf.jpg" alt="bay leaf">
+<h3>bay leaf</h3>
+<p>High Quality bay leaf</p>
+</div>
+
+<div class="card">
+<img src="images/kalpasi.jpg" alt="kalpasi">
+<h3>kalpasi</h3>
+<p>High Quality kalpasi</p>
+</div>
+
+<div class="card">
+<img src="images/star anise.jpg" alt="star anise">
+<h3>star anise</h3>
+<p>High Quality star anise</p>
 </div>
 
 </div>
@@ -247,6 +257,8 @@ Tamil Nadu, India</p>
 </p>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
